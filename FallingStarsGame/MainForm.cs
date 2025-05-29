@@ -114,17 +114,16 @@ namespace FallingStarsGame
             graph.Clear(Color.DarkSlateBlue);
             var font = new Font("Roboto", 22, FontStyle.Bold);
             var fontSmall = new Font("Roboto", 14, FontStyle.Regular);
-
             var title = "Выберите сложность";
             var titleSize = graph.MeasureString(title, font);
             graph.DrawString(title, font, Brushes.White, (this.ClientSize.Width - titleSize.Width) / 2, 100);
 
-            // Кнопки уровней
+            //кнопки уровней
             DrawMenuButton(graph, easyRect, "Лёгко (0.5x)");
-            DrawMenuButton(graph, mediumRect, "Стандартно (1x)");
+            DrawMenuButton(graph, mediumRect, "Нормально (1x)");
             DrawMenuButton(graph, hardRect, "Сложно (2x)");
 
-            // Кнопка звука
+            //кнопка звука
             var soundText = isSoundOn ? "Звук: ВКЛ" : "Звук: ВЫКЛ";
             DrawMenuButton(graph, soundRect, soundText);
         }
@@ -333,7 +332,7 @@ namespace FallingStarsGame
             return dx * dx + dy * dy <= radius * radius;
         }
 
-        private void DrawStar(Graphics g, PointF center, float size, Brush brush)
+        private void DrawStar(Graphics graph, PointF center, float size, Brush brush)
         {
             //фигура звезды
             PointF[] points = new PointF[10];
@@ -350,18 +349,18 @@ namespace FallingStarsGame
                 angle += step;
             }
 
-            g.FillPolygon(brush, points);
-            g.DrawPolygon(Pens.DarkGoldenrod, points);
+            graph.FillPolygon(brush, points);
+            graph.DrawPolygon(Pens.DarkGoldenrod, points);
         }
 
-        private void DrawIce(Graphics g, PointF center, float size, Brush brush)
+        private void DrawIce(Graphics graph, PointF center, float size, Brush brush)
         {
             //фигура льдинки
             RectangleF ice = new RectangleF(center.X - size / 2, center.Y - size / 2, size, size);
             Color color = Color.FromArgb(180, ((SolidBrush)brush).Color);
-            using (SolidBrush b = new SolidBrush(color))
-                g.FillRectangle(b, ice);
-            g.DrawRectangle(Pens.Blue, ice.X, ice.Y, ice.Width, ice.Height);
+            using (SolidBrush sBrush = new SolidBrush(color))
+                graph.FillRectangle(sBrush, ice);
+            graph.DrawRectangle(Pens.Blue, ice.X, ice.Y, ice.Width, ice.Height);
         }
     }
 }

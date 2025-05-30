@@ -1,0 +1,10 @@
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\bin\Debug\FallingStarsGame.exe.config
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\bin\Debug\FallingStarsGame.exe
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\bin\Debug\FallingStarsGame.pdb
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\obj\Debug\FallingStarsGame.csproj.AssemblyReference.cache
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\obj\Debug\FallingStarsGame.Properties.Resources.resources
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\obj\Debug\FallingStarsGame.csproj.GenerateResource.cache
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\obj\Debug\FallingStarsGame.csproj.CoreCompileInputs.cache
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\obj\Debug\FallingStarsGame.exe
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\obj\Debug\FallingStarsGame.pdb
+C:\Users\fedro\source\repos\FallingStarsGame\FallingStarsGame\obj\Debug\FallingStarsGame.MainForm.resources
